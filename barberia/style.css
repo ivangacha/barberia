@@ -82,6 +82,11 @@ nav a:hover{
     margin-top: 10px;
 }
 
+.imagen-productos{
+    height: 250px;
+    width: 250px;
+}
+
 footer{
     text-align: center;
     background: url(imagen/bg.jpg);
@@ -92,10 +97,6 @@ footer{
     color: white;
     font-size: 13px;
     margin: 20px;
-}
-
-main{
-    
 }
 
 form{
