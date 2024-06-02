@@ -98,7 +98,7 @@ footer{
     font-size: 13px;
     margin: 20px;
 }
-
+/*
 form{
     margin: 40px 0;
 }
@@ -151,6 +151,117 @@ thead{
 td, th{
     border: 1px solid black;
     padding: 8px 15px;
+}
+*/
+
+.agendamiento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario, table {
+    width: 100%;
+    max-width: 500px; /* Puedes ajustar el ancho máximo según sea necesario */
+    margin: 10px 0;
+}
+
+form label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input-padron{
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.formulario label, .formulario input, .formulario textarea, .formulario .enviar{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.formulario fieldset {
+    padding: 10px;
+    display: flex;
+}
+
+.formulario fieldset legend {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.formulario fieldset label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: lighter;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input {
+    margin-right: 10px;
+}
+/*
+.formulario label, .formulario input, .formulario .enviar{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+fieldset{
+    display: inline-flex;
+    width: 100%;
+}
+
+fieldset legend{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+fieldset label{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+table th, table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+.enviar {
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: darkorange;
+    transform: scale(1.2);
 }
 
 /*Aqui empieza el codigo CSS para la pagina index*/

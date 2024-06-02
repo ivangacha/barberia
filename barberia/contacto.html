@@ -27,34 +27,29 @@
                     <label for="nombreapellido">Nombre y Apellido</label>
                     <input type="text" id="nombreapellido" class="input-padron" required>
     
+                    <label for="correoelectronico">Correo Electronico</label>
+                    <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+    
                     <label for="telefono">Telefono</label>
                     <input type="tel" id="telefono" class="input-padron" required placeholder="(xxx) XXXX XXXX">
-                    
-                    <label for="fecha">Escoja la fecha y hora</label>
-                    <input type="datetime-local" id="fecha_hora" class="input-padron">
     
-                    <input type="submit" value="Agendar cita" class="enviar">
+                    <label for="mensaje">Indique su sugerencia, queja o reclamo</label>
+                    <textarea cols="70" rows="10" id="mensaje" class="input-padron"></textarea>
+    
+                    <fieldset>
+                        <legend>¿Como le gustaria que lo contactemos?</legend>
+    
+                        <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                        
+                        <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono</label>
+                        
+                        <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whats app</label>
+                    </fieldset>
+                    
+                    <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir novedades de la Barberia?</label>
+    
+                    <input type="submit" value="Enviar formulario" class="enviar">
                 </form>
-                <table>
-                    <thead>
-                        <th>Dìa</th>
-                        <th>Horario</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Lunes - Viernes</td>
-                            <td>09h - 20h</td>
-                        </tr>
-                        <tr>
-                            <td>Sabados - Domingos</td>
-                            <td>10h - 20h</td>
-                        </tr>
-                        <tr>
-                            <td>Festivos</td>
-                            <td>11h - 17h</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </main>
         <footer>
