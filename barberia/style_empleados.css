@@ -1,0 +1,139 @@
+/* Estilo de inicio de sesion empleados y demas paginas de este modulo*/
+
+html, body{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: url(imagen/bg.jpg);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh; /* Ocupa el 90% de la altura de la ventana */
+}
+
+.contenedor{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.caja {
+    margin: 10px;
+}
+
+.caja img {
+    max-width: 100%;
+    height: auto;
+}
+
+.registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: white solid 1px;
+    border-radius: 10px;
+    width: 20%;
+}
+
+.formulario_registro {
+    width: 80%;
+    max-width: 100%; /* Puedes ajustar el ancho máximo según sea necesario */
+    margin: 10px 0;
+}
+
+.formulario_registro label, .formulario_registro input, .formulario .enviar{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.formulario_registro label{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.formulario_registro input{
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.ingresar {
+    background-color: orange;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 0;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.ingresar:hover {
+    background-color: darkorange;
+    transform: scale(1.2);
+}
+
+footer{
+    height: 10vh; /* Ocupa el 10% de la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.copyright{
+    color: white;
+    font-size: 15px;
+    margin: auto;
+}
+
+/* Estilo de tabla visualizacion agendamiento de citas*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+table th, table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+@media screen and (max-width:480px) {
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+}
