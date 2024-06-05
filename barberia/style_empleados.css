@@ -171,19 +171,20 @@ footer{
 
 /* Estilo de tabla visualizacion agendamiento de citas*/
 
-table {
+.tabla_agendamientos {
     border-collapse: collapse;
     width: 100%;
 }
 
-thead{
+.tabla_agendamientos thead{
     background: #555555;
     color: white;
     font-weight: bold;
 }
 
-table th, table td {
-    border: 1px solid #000;
+.tabla_agendamientos th, .tabla_agendamientos td {
+    color: white;
+    border: 4px solid #c78c19;
     padding: 8px;
     text-align: center;
 }
